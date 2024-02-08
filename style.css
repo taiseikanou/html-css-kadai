@@ -117,11 +117,17 @@ img {
     top: 100%;
 }
 }
+
 .HeaderLogo__image--sp {
   display: none;
   height: 16px;
   width: auto;
 }
+
+@media screen and (max-width: 767px){
+.HeaderLogo__image--sp {
+    display: block !important;
+}}
 
 .HeaderContainer {
   display: flex;
@@ -250,6 +256,10 @@ main {
 }
 }
 
+.FirstView__whole-image {
+  display: none;
+}
+
 .FirstView__bg-image--right-rectangle {
   right: 0;
   bottom: 70px;
@@ -267,12 +277,21 @@ main {
 }
 
 
+
 @media screen and (max-width: 767px){
 .FirstView__whole-image {
     display: block;
     margin-bottom: 7px;
     width: 100%;
 }
+}
+
+.FirstView__container {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 219px 
 }
 
 @media screen and (max-width: 1080px){
@@ -333,13 +352,7 @@ main {
 }
 
 
-.FirstView__container {
-  max-width: 1040px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  padding-top: 219px 
-}
+
 
 .FirstViewContent__caption {
   font-size: 12px;
